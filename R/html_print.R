@@ -100,6 +100,7 @@ save_html <- function(html, file, background = "white", libdir = "lib") {
   # write it
   out <- file(description = file, encoding = "UTF-8")
   writeLines(html, file, useBytes = TRUE)
+  close(out)
 }
 
 
